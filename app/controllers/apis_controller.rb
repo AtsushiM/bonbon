@@ -4,7 +4,7 @@ class ApisController < ApplicationController
   # GET /apis
   # GET /apis.json
   def index
-    @apis = Api.all
+    render :json => Api.get_json
   end
 
   # GET /apis/1
