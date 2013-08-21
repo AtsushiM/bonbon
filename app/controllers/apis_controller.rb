@@ -4,10 +4,11 @@ class ApisController < ApplicationController
   # GET /apis
   # GET /apis.json
   def index
-    respond_to do |format|
-      format.html { @apis = Api.all }
-      format.json { render :json => Api.get_json }
-    end
+    @apis = Api.all
+    # respond_to do |format|
+    #   format.html { @apis = Api.all }
+    #   format.json { render :json => Api.get_json }
+    # end
   end
 
 

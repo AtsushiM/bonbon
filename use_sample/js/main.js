@@ -5,7 +5,7 @@
   makeThumbs = function(item) {
     var i, img, name, tags, _i, _len;
     name = item['name'];
-    img = item['img'];
+    img = JSON.parse(item['result_json']);
     tags = '';
     for (_i = 0, _len = img.length; _i < _len; _i++) {
       i = img[_i];

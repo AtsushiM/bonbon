@@ -3,7 +3,7 @@ do () ->
 
     makeThumbs = (item) ->
         name = item['name']
-        img = item['img']
+        img = JSON.parse item['result_json']
         tags = ''
 
         for i in img
